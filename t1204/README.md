@@ -9,13 +9,10 @@ What you will need:
 
 2. Windows API understanding
 
-3. Converter
+3. Converter python script (or any language you wish)
 
 
 Generally, shellcode injection and execution follow these steps:
-
-
-
 1. Obtain a handle to a process (local or remote)
 
 2. Allocate new region of memory to the process
@@ -43,12 +40,11 @@ Step 1: Generate payload using msfconsole for calc.exe (64bit)
 
 >>> uuid.txt
 
-
 Step 2: Create python script (converter.py) to convert shellcode bytes into UUID strings
 
-
-
 Step 3: Create VBA to load UUIDs into memory
+
+>>> calc-popup.vba
 
 # allocate mem, copy shellcode into mem, transfer execution to shellcode via abused function call
 
