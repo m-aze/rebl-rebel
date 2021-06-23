@@ -1,3 +1,5 @@
+! DISCLAIMER: Content is for educational purposes only. Do not investigate individuals, websites, server, or a network, or conduct any illegal activities on any system you do not have permission to analyze. !
+
 Task: Modify the previous macro to emulate the Lazarus group. Use the Windows API to store shellcode as UUIDs (UuidFromStringA) and then run that shellcode (EnumSystemLocalesA). Again, this can be a simple test with calc or notepad. Upon success, a real payload will be provided. PtrSafe and LongPtr are key to getting this to work.
 
 
@@ -28,11 +30,12 @@ Generally, shellcode injection and execution follow these steps:
 
 22. Allocate some blocks of memory on the heap
 
-33. Using UuidFromStringA, convert an array of UUID strings into its binary representation. In this case, this "binary representation" is our shellcode.
+33. Using UuidFromStringA, convert an array of UUID strings into its binary representation.
 
 44. Using EnumSystemLocalesA, specify the pointer to the heap as a callback function, so it gets executed while EnumSystemLocalesA is running.
 
 
+Instructions:
 
 Step 1: Generate payload using msfconsole for calc.exe (64bit)
 
