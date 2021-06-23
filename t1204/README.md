@@ -63,6 +63,8 @@ Step4: Load VBA into Word.docm with macros enabled
 
 
 Resources:
+
+
 https://research.nccgroup.com/2021/01/23/rift-analysing-a-lazarus-shellcode-execution-method/
 
 http://ropgadget.com/posts/abusing_win_functions.html
