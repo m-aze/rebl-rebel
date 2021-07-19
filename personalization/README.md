@@ -21,5 +21,5 @@ It is recommended that use be limited to controlled environments and/or penetrat
 
 Download and install **Tilix | arTTY** quickly with the steps described here.
 
-https://github.com/gnunn1/tilix
+https://github.com/gnunn1/tilix |
 https://gitlab.com/mjwhitta/artty
