@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/m-aze/rebl-rebel/tree/main/personalization">
-    <img alt="Logo" src="https://github.com/m-aze/rebl-rebel/blob/main/personalization/54cce38a401f60604feacb9063f4845b.png" width="300"/>
+    <img alt="Logo" src="https://github.com/m-aze/rebl-rebel/blob/main/personalization/54cce38a401f60604feacb9063f4845b.png" width="800"/>
   </a>
   <h1>Maze Customization</h1>
   <h3>👨‍🍳 Beauty is in the eye of the beholder... 👩‍🍳</h3>
