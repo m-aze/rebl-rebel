@@ -19,7 +19,7 @@ It is recommended that use be limited to controlled environments and/or penetrat
 
 ## Download and install
 
-Download and install **Tilix | arTTY** quickly with the steps described here.
+Download and install **Tilix | arTTY** quickly with the links provided below.
 
 https://github.com/gnunn1/tilix |
 https://gitlab.com/mjwhitta/artty
