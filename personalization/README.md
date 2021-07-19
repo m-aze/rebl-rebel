@@ -10,7 +10,7 @@
 <br/>
 
 # morning.sh
-<img alt="Picture" src="https://github.com/m-aze/rebl-rebel/blob/main/personalization/materials/40bc0e603b76b5c42504aa3a3d3fd2e9.png" width="600"/>
+<img alt="Picture" src="https://github.com/m-aze/rebl-rebel/blob/main/personalization/materials/cb35e0041d6018a8364916d5d883b32b.png" width="600"/>
 
 The use of morning.sh is to automate your updates && upgrades through a bash script! Feel free to skip your daily housekeeping by using this script to make your life easier and brighter.
 
