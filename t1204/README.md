@@ -1,4 +1,4 @@
-# T1204 Demonstration: User Execution: Malicious File
+# T1204 User Execution: Malicious File
 <div align="center">
   <img alt="Picture" src="https://github.com/m-aze/rebl-rebel/blob/main/t1204/materials/example.gif" width="700"/>
 </div>
