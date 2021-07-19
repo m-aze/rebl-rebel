@@ -9,6 +9,16 @@
 </div>
 <br/>
 
+# morning.sh
+<img alt="Logo" src="https://github.com/m-aze/rebl-rebel/blob/main/personalization/materials/40bc0e603b76b5c42504aa3a3d3fd2e9.png" width="500"/>
+
+The use of morning.sh is to automate your updates && upgrades through a bash script! Feel free to skip your daily housekeeping by using this script to make your life easier and brighter.
+
+- Shows current calendar
+- Shows 'Weather' banner
+- Displays a Grey's Anatomy reference
+- Displays a random pixelated image using arTTY
+
 ## Download and install
 
 Download and install **Tilix | arTTY** quickly with the links provided below.
