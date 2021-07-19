@@ -1,13 +1,13 @@
-## Disclaimer
-Content is for educational purposes only. Do not investigate individuals, websites, server, or a network, or conduct any illegal activities on any system you do not have permission to analyze. !
+# T1204 Demonstration: User Execution: Malicious File
+<div align="center">
+  <img alt="Picture" src="https://github.com/m-aze/rebl-rebel/blob/main/t1204/materials/example.gif" width="700"/>
+</div>
+
+# trigen.py
+<img alt="Picture" src="https://github.com/m-aze/rebl-rebel/blob/main/t1204/materials/5f6f1f6a05a17e7397c6d7fe2fe44be2.png" width="600"/>
 
 **Task: Modify the previous macro to emulate the Lazarus group. Use the Windows API to store shellcode as UUIDs (UuidFromStringA) and then run that shellcode (EnumSystemLocalesA). Again, this can be a simple test with calc or notepad. Upon success, a real payload will be provided. PtrSafe and LongPtr are key to getting this to work.**
 
-
-**What you will need:**
-1. Metasploit
-2. Windows API understanding
-3. Converter python script (or any language you wish)
 
 **Generally, shellcode injection and execution follow these steps:**
 1. Obtain a handle to a process (local or remote)
@@ -17,10 +17,10 @@ Content is for educational purposes only. Do not investigate individuals, websit
 
 //
 
-11. Create a heap object inside the local process
-22. Allocate some blocks of memory on the heap
-33. Using UuidFromStringA, convert an array of UUID strings into its binary representation.
-44. Using EnumSystemLocalesA, specify the pointer to the heap as a callback function, so it gets executed while EnumSystemLocalesA is running.
+a. Create a heap object inside the local process
+b. Allocate some blocks of memory on the heap
+c. Using UuidFromStringA, convert an array of UUID strings into its binary representation.
+d. Using EnumSystemLocalesA, specify the pointer to the heap as a callback function, so it gets executed while EnumSystemLocalesA is running.
 
 
 # Instructions:
@@ -62,3 +62,6 @@ https://github.com/karttoon/trigen
 https://docs.microsoft.com/en-us/windows/win32/api/winnls/nf-winnls-enumsystemlocalesa
 
 https://docs.microsoft.com/en-us/windows/win32/api/rpcdce/nf-rpcdce-uuidfromstringa
+
+## Disclaimer
+Content is for educational purposes only. Do not investigate individuals, websites, server, or a network, or conduct any illegal activities on any system you do not have permission to analyze. !
