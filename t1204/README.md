@@ -17,11 +17,12 @@
 
 //
 
-a. Create a heap object inside the local process
-b. Allocate some blocks of memory on the heap
-c. Using UuidFromStringA, convert an array of UUID strings into its binary representation.
-d. Using EnumSystemLocalesA, specify the pointer to the heap as a callback function, so it gets executed while EnumSystemLocalesA is running.
-
+<ol>
+<li> Create a heap object inside the local process </li>
+<li> Allocate some blocks of memory on the heap </li>
+<li> Using UuidFromStringA, convert an array of UUID strings into its binary representation </li>
+<li> Using EnumSystemLocalesA, specify the pointer to the heap as a callback function, so it gets executed while EnumSystemLocalesA is running </li>
+</ol>
 
 # Instructions:
 
@@ -37,7 +38,7 @@ Step 3: Create VBA to load UUIDs into memory
 
 >>> calc-popup.vba
 
-# allocate mem, copy shellcode into mem, transfer execution to shellcode via abused function call
+# Allocate and copy memory then execute to shellcode via abused function call
 
 >>> python trigen.py "$(msfvenom -a x64 --platform windows -p windows/x64/exec cmd=calc.exe x64/alpha_mixed -f py)"
 
