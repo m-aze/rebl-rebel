@@ -49,8 +49,9 @@ Step4: Load VBA into Word.docm with macros enabled
 >>> calc.exe will pop up
 
 # Result
+<div align="center">
 <img alt="Picture" src="https://github.com/m-aze/rebl-rebel/blob/main/t1204/materials/example2.gif" width="600"/>
-
+</div>
 
 # Resources:
 
