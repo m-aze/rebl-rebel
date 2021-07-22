@@ -67,4 +67,9 @@ https://docs.microsoft.com/en-us/windows/win32/api/winnls/nf-winnls-enumsystemlo
 https://docs.microsoft.com/en-us/windows/win32/api/rpcdce/nf-rpcdce-uuidfromstringa
 
 ## Disclaimer
-Content is for educational purposes only. Do not investigate individuals, websites, server, or a network, or conduct any illegal activities on any system you do not have permission to analyze. !
+
+The use of the application may be a criminal act, depending on the regulations of each country.
+
+**The author of this document is not responsible in case criminal charges are brought against any individual or corporation using the tool against the stipulated laws, as well as for damages caused by a misuse of the tool. It is the responsibility of the end user to obey all applicable laws.**
+
+It is recommended that use be limited to controlled environments and/or penetration testing with prior approval.
