@@ -20,6 +20,33 @@ logfile=/var/log/kali-update.log
 sudo touch $logfile
 sudo chmod 666 $logfile
 
+# introduction before updates
+cat <<EOF | tee -a $logfile
+
+$(info Current Date and Time is: `date +"%Y-%m-%d %T"`)
+
+$(info "Hello $USER, it's a beautiful day to save lives. Let's have some fun.")
+
+$(subinfo Doing some housekeeping.	Please stay on standby...)
+
+EOF
+
+# proceed with morning housekeeping
+morning () {
+a="sudo apt-get"
+
+for i in update upgrade dist-upgrade autoremove autoclean; do
+$a $i -y || break
+echo "--------------------------------------------------------------------------------------------"
+done
+}
+
+# add improvements for error checking
+morning | tee -a $logfile
+
+# successful completion of housekeeping
+
+echo " "
 declare -a banner
 banner+=("")
 banner+=("░██╗░░░░░░░██╗███████╗░█████╗░████████╗██╗░░██╗███████╗██████╗░")
@@ -32,51 +59,26 @@ banner+=("░░░╚═╝░░░╚═╝░░╚══════╝╚�
 i=0
 
 while IFS="" read -r line; do
-	echo -e "\e[32m$line ${banner[i]}\e[0m"
-	((i+=1))
+        echo -e "\e[32m$line ${banner[i]}\e[0m"
+        ((i+=1))
 done < <(cal)
 
 CURRENTDATEONLY=`date +"%b %d, %Y"`
 
 # while loop to create new lines for weather
 while read -r line; do
-	good "$line"
+        good "$line"
 done < <(weather "nyz072") 
 
-# introduction before updates
-
-cat <<EOF | tee -a $logfile
-
-$(info Current Date and Time is: `date +"%Y-%m-%d %T"`)
-
-$(info "Hello $USER, it's a beautiful day to save lives. Let's have some fun. Your fortune for today is:")
-
-$(warn $(fortune -s))
-
-$(subinfo Doing some housekeeping.	Please stay on standby...)
-
-EOF
-
-# proceed with morning housekeeping
-
-morning () {
-	sudo apt-get update -y || return $?
-	sudo apt-get upgrade -y || return $?
-	sudo apt-get dist-upgrade -y || return $?
-	sudo apt-get autoremove -y || return $?
-	sudo apt-get autoclean -y || return $?
-}
-
-# add improvements for error checking
-morning | tee -a $logfile
-
-# successful completion of script
 cat <<EOF | tee -a $logfile
 
 $(info The time now is: $(date +"%Y-%m-%d %T"))
 
-$(good "$USER, you're all good to go!")
+$(info "$USER, your fortune for today is:")
 
+$(warn $(fortune -s))
+
+$(good "$USER, you're all good to go!")
 EOF
 
 # add some arTTY at the end
